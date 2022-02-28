@@ -16,7 +16,7 @@ public class DefaultCollectionRenderer implements Renderer<Collection> {
 		if (collection.size() == 0) {
 			renderedResult = "";
 		} else if (collection.size() == 1) {
-			renderedResult = collection.iterator().next().toString();
+			renderedResult = String.valueOf(collection.iterator().next());
 		} else {
 			renderedResult = collection.toString();
 		}
