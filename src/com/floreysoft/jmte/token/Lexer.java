@@ -108,9 +108,10 @@ public class Lexer {
                         if (isQuoted(operand)) {
                         	innerToken = new PlainTextToken(operand.substring(1, operand.length() - 1));
                         } else {
-													// no string operand since there are no quotes -> resolve this to be a resolved expression
-													innerToken = innerNextToken(operand);
-												}
+							// no string operand since there are no quotes -> resolve this to be a resolved expression
+//							innerToken = innerNextToken(operand);
+                        	innerToken = new PlainTextToken(operand);
+						}
                         complexVariable = completeIfExpression.substring(0, posEq).trim();
                     } else {
                         complexVariable = completeIfExpression;
