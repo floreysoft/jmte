@@ -38,6 +38,11 @@ Where is JMTE used
 - Email Notifications in Graylog: http://docs.graylog.org/en/3.1/pages/streams/alerts.html#email-alert-notification
 
 
+Installing locally
+------------------
+
+mvn install:install-file -Dfile=target\jmte-7.0.3.jar -DgroupId=com.floreysoft -DartifactId=jmte -Dversion=7.0.3 -Dpackaging=jar
+
 
 Releasing
 ---------
